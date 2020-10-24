@@ -1,0 +1,45 @@
+body {
+    color: brown;
+}
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 82%;
+    margin: 48px auto;
+    align-items: center;
+}
+svg.logo {
+    transform: scale(0.8);
+}
+.menuCtrl {
+    position: relative;
+}
+svg.closemenu {
+ /*   position: absolute;
+    left: 0;
+    top: 0;
+    display: none;*/
+}
+.modal {
+    position: absolute;
+    width: 70%;
+    background: rgb(189, 134, 134);
+    right: 0;
+    top: 0;
+    height: 100vh;
+}
+ul {
+    margin-top: 40px;
+    margin-left: 60px;    
+}
+li {
+    list-style: none;
+}
+svg.closemenu {
+    margin-top: 56px;
+    margin-left: 78%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
