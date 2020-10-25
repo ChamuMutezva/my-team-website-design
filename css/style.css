@@ -1,24 +1,22 @@
-body {
-  color: brown; }
-
+@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700;900&display=swap");
 .navMenu {
   display: flex;
   justify-content: space-between;
   width: 82%;
-  margin: 48px auto;
+  margin: auto;
+  padding-top: 48px;
+  padding-bottom: 80px;
   align-items: center; }
 
 svg.logo {
-  transform: scale(0.8); }
+  transform: scale(0.8);
+  margin-left: -15px; }
 
 .menuCtrl {
   position: relative; }
 
-svg.closemenu {
-  /*   position: absolute;
-     left: 0;
-     top: 0;
-     display: none;*/ }
+svg.hamburger path {
+  fill: white; }
 
 .modal {
   position: absolute;
@@ -26,11 +24,15 @@ svg.closemenu {
   background: #bd8686;
   right: 0;
   top: 0;
-  height: 100vh; }
+  height: 100vh;
+  display: none; }
 
 ul {
   margin-top: 40px;
-  margin-left: 60px; }
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px; }
 
 li {
   list-style: none; }
@@ -43,12 +45,40 @@ a {
   text-decoration: none;
   color: white; }
 
+a.btn {
+  border: 1px solid white;
+  padding: 10px 30px;
+  border-radius: 20px; }
+
+header {
+  background-color: #014E56; }
+
+section.primary {
+  width: 82%;
+  margin: auto;
+  text-align: center; }
+
+p {
+  line-height: 28px;
+  font-weight: 100;
+  margin: auto 5px; }
+
+.secondary {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-image: url(../images/bg-pattern-home-2.svg);
+  background-repeat: no-repeat; }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
 body {
-  background-color: aquamarine; }
+  background-color: aquamarine;
+  font-family: 'Livvic', sans-serif;
+  color: white;
+  font-size: 15px; }
 
 /*# sourceMappingURL=style.css.map */
