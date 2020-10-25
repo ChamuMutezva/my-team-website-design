@@ -1,6 +1,5 @@
-body {
-    
-}
+body {}
+
 .navMenu {
     display: flex;
     justify-content: space-between;
@@ -10,16 +9,20 @@ body {
     padding-bottom: 80px;
     align-items: center;
 }
+
 svg.logo {
     transform: scale(0.8);
     margin-left: -15px;
 }
+
 .menuCtrl {
     position: relative;
 }
+
 svg.hamburger path {
     fill: white;
 }
+
 .modal {
     position: absolute;
     width: 70%;
@@ -29,6 +32,7 @@ svg.hamburger path {
     height: 100vh;
     display: none;
 }
+
 ul {
     margin-top: 40px;
     margin-left: 60px;
@@ -36,39 +40,156 @@ ul {
     flex-direction: column;
     row-gap: 30px;
 }
+
 li {
     list-style: none;
 }
+
 svg.closemenu {
     margin-top: 56px;
     margin-left: 78%;
 }
+
 a {
     text-decoration: none;
     color: white;
 }
+
 a.btn {
-    border: 1px solid white;   
+    border: 1px solid white;
     padding: 10px 30px;
     border-radius: 20px;
 }
+
 header {
     background-color: #014E56;
 }
+
 section.primary {
     width: 82%;
     margin: auto;
     text-align: center;
 }
+
 p {
     line-height: 28px;
     font-weight: 100;
     margin: auto 5px;
 }
+
 .secondary {
     position: relative;
-    width: 100%;
-    height: 200px;
+    width: 96%;
+    height: 100px;
+    background-size: contain;
     background-image: url(../images/bg-pattern-home-2.svg);
     background-repeat: no-repeat;
+    margin: 80px auto 0;
+}
+
+main {
+    background-color: #012F34;
+    position: relative;
+    overflow-x: hidden;
+
+    section.hero {
+        width: 82%;
+        margin: auto;
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .heroTitle {
+        position: relative;
+        width: 240px;
+        padding-top: 40px;
+    }
+
+    .heroTitle::before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 4px;
+        background-color: #F67E7E;
+        top: 0;
+        left: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .heroBody {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .heroDescription {
+        text-align: center;
+    }
+
+    .heroDescription img {
+        margin: auto;
+        display: block;
+    }
+
+    h3 {
+        margin: 14px auto;
+    }
+
+    .profiles {
+        background-color: #2C6269;
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .profilesHeader {
+        width: 82%;
+        margin: auto;
+        padding: 40px 0;
+    }
+
+    .profilesBody {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        flex-direction: column;
+    }
+
+    figure {
+        img {
+            width: 20%;
+            border-radius: 50%;
+            margin: auto;
+            display: block;
+        }
+    }
+
+    .profilesDescription {
+        width: 82%;
+        margin: auto;
+        background-image: url("../images/icon-quotes.svg");
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    blockquote {
+        line-height: 25px;
+        text-align: center;
+    }
+
+}
+
+main::before {
+    position: absolute;
+    width: 200px;
+    height: 244px;
+    right: -100px;
+    content: "";
+    background-image: url("../images/bg-pattern-home-3.svg");
 }
