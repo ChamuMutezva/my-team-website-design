@@ -234,3 +234,26 @@ main::before {
   content: "";
   background-image: url("../images/bg-pattern-home-3.svg");
 }
+
+footer {
+  background-color: #002529;
+}
+footer svg.footerLogo {
+  margin: auto;
+  display: block;
+}
+footer .footerLogoContainer {
+  padding-top: 80px;
+}
+footer ul {
+  width: 107px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer address {
+  text-align: center;
+  line-height: 28px;
+}
