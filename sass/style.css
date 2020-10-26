@@ -301,6 +301,37 @@ footer {
   background-color: #002529;
 }
 
+footer svg.footerLogo {
+  margin: auto;
+  display: block;
+}
+
+footer .footerLogoContainer {
+  padding-top: 80px;
+}
+
+footer ul {
+  width: 107px;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer address {
+  text-align: center;
+  line-height: 28px;
+}
+
 * {
   padding: 0;
   margin: 0;

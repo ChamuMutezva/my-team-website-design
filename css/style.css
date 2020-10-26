@@ -197,21 +197,38 @@ main::before {
 
 footer {
   background-color: #002529; }
+  footer .footerSection {
+    width: 82%;
+    margin: auto;
+    padding-top: 80px; }
   footer svg.footerLogo {
     margin: auto;
-    display: block; }
-  footer .footerLogoContainer {
-    padding-top: 80px; }
+    display: block;
+    transform: scale(0.6); }
   footer ul {
     width: 107px;
-    margin: 20px auto;
+    margin: 24px auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between; }
   footer address {
     text-align: center;
-    line-height: 28px; }
+    line-height: 25px;
+    font-size: 1rem;
+    font-weight: 600; }
+  footer a {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 25px; }
+  footer .social {
+    margin: 40px auto 20px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px; }
+  footer p.copyright {
+    text-align: center;
+    padding-bottom: 98px; }
 
 * {
   padding: 0;

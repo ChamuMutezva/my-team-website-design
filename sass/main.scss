@@ -266,18 +266,23 @@ main::before {
 
 footer {
     background-color: #002529;
+    .footerSection {
+        width: 82%;
+        margin: auto;
+        padding-top: 80px;
+    }
 
     svg.footerLogo {
         margin: auto;
         display: block;
-        
+        transform: scale(0.6);
     }
     .footerLogoContainer {
-        padding-top: 80px;
+       
     }
     ul {       
         width: 107px;
-        margin: 20px auto;
+        margin: 24px auto;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -285,6 +290,23 @@ footer {
     }
     address {
         text-align: center;
-        line-height: 28px;
+        line-height: 25px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    a {
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    .social {
+        margin: 40px auto 20px;
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+    }
+    p.copyright {
+        text-align: center;
+        padding-bottom: 98px;
     }
 }
