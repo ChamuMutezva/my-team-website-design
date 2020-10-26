@@ -359,4 +359,12 @@ footer p.copyright {
   text-align: center;
   padding-bottom: 98px;
 }
+
+.showModal {
+  display: block;
+}
+
+svg.hamburger:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */

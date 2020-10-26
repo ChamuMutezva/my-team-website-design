@@ -229,4 +229,13 @@ footer {
     text-align: center;
     padding-bottom: 98px; }
 
+.showModal {
+  display: block; }
+
+.hideModal {
+  display: none; }
+
+svg.hamburger:hover {
+  cursor: pointer; }
+
 /*# sourceMappingURL=main.css.map */
