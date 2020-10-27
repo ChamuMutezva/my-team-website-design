@@ -1,15 +1,28 @@
 body {
     overflow-x: hidden;
 }
-
+//nav
+nav {
+    padding-top: 48px;
+    padding-bottom: 80px;
+}
+h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin: 0 auto 18px;
+    padding: 0;
+    line-height: 1;
+}
+h1 span {
+    color: #F67E7E;
+}
 .navMenu {
     display: flex;
     justify-content: space-between;
     width: 82%;
-    margin: auto;
-    padding-top: 48px;
-    padding-bottom: 80px;
+    margin: auto;   
     align-items: center;
+    height: 32px; //auto setting using padding and margins not matching design
 }
 
 svg.logo {
@@ -276,10 +289,7 @@ footer {
         margin: auto;
         display: block;
         transform: scale(0.6);
-    }
-    .footerLogoContainer {
-       
-    }
+    }  
     ul {       
         width: 107px;
         margin: 24px auto;
