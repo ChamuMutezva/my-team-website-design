@@ -54,10 +54,12 @@ ul {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+    margin-bottom: 50px;
 }
 
 li {
     list-style: none;
+    width: 140px;
 }
 
 svg.closemenu {
@@ -88,7 +90,7 @@ section.primary {
 
 p {
     line-height: 28px;
-    font-weight: 100;
+    font-weight: 400;
     margin: auto 5px;
 }
 
@@ -328,4 +330,23 @@ footer {
 }
 svg.hamburger:hover {
     cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    svg.closemenu {        
+        display: none;
+    }
+    ul {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .modal {  
+        display: block;     
+        background: inherit;  
+        padding-top: 12px;  
+        height: 20vh;    
+    }
+    svg.hamburger {
+        display: none;
+    }
 }

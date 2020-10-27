@@ -69,10 +69,12 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 30px;
+  margin-bottom: 50px;
 }
 
 li {
   list-style: none;
+  width: 140px;
 }
 
 svg.closemenu {
@@ -103,7 +105,7 @@ section.primary {
 
 p {
   line-height: 28px;
-  font-weight: 100;
+  font-weight: 400;
   margin: auto 5px;
 }
 
@@ -386,5 +388,29 @@ footer p.copyright {
 
 svg.hamburger:hover {
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  svg.closemenu {
+    display: none;
+  }
+  ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .modal {
+    display: block;
+    background: inherit;
+    padding-top: 12px;
+    height: 20vh;
+  }
+  svg.hamburger {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
