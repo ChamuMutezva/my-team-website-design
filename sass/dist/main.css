@@ -33,6 +33,10 @@ svg.logo {
   margin-left: -15px;
 }
 
+.closemenu path {
+  fill: white;
+}
+
 .menuCtrl {
   position: relative;
 }
@@ -43,8 +47,8 @@ svg.hamburger path {
 
 .modal {
   position: absolute;
-  width: 70%;
-  background: #bd8686;
+  width: 68%;
+  background: #2C6269;
   right: 0;
   top: 0;
   height: 100vh;
@@ -62,7 +66,17 @@ ul {
 
 li {
   list-style: none;
-  width: 140px;
+}
+
+li.contact {
+  margin-top: 40px;
+  width: 175px;
+}
+
+li.home, li.about, li.contact {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 28px;
 }
 
 svg.closemenu {
@@ -76,8 +90,8 @@ a {
 }
 
 a.btn {
-  border: 1px solid white;
-  padding: 10px 30px;
+  border: 3px solid white;
+  padding: 10px 20px;
   border-radius: 20px;
 }
 
@@ -315,7 +329,8 @@ svg.hamburger:hover {
 
   ul {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+    margin-left: 0;
   }
 
   .modal {
@@ -327,5 +342,13 @@ svg.hamburger:hover {
 
   svg.hamburger {
     display: none;
+  }
+
+  li.contact {
+    margin-top: 0px;
+  }
+
+  a.btn {
+    padding: 2px 20px;
   }
 }
