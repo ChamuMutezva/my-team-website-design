@@ -193,6 +193,7 @@ main .heroDescription img {
 
 main h3 {
   margin: 14px auto;
+  color: #F67E7E;
 }
 
 main .profiles {
@@ -460,6 +461,9 @@ svg.hamburger:hover {
   main h3, main p {
     text-align: left;
     margin-left: 50px;
+  }
+  main .heroDescription img {
+    margin: auto 0;
   }
 }
 
