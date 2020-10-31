@@ -121,7 +121,7 @@ section.primary {
 
 p {
   line-height: 28px;
-  font-weight: 400;
+  font-weight: 600;
   margin: auto 5px;
 }
 
@@ -201,6 +201,11 @@ main .profiles {
 
 main .profiles h2 {
   text-align: center;
+  margin: auto;
+}
+
+main .profiles strong {
+  color: #79C8C7;
 }
 
 main .profilesHeader {
@@ -223,7 +228,8 @@ main .profilesBody {
 }
 
 main figure img {
-  width: 19%;
+  width: 62px;
+  border: 2px solid #C4FFFE;
   border-radius: 50%;
   margin: auto;
   display: block;
@@ -240,7 +246,9 @@ main .profilesDescription {
 main blockquote {
   line-height: 25px;
   text-align: center;
-  margin-top: 36px;
+  margin: 36px auto;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 main figure {
@@ -274,9 +282,13 @@ main figcaption {
 
 main figcaption span {
   color: #C4FFFE;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 28px;
   font-size: 1.2rem;
+}
+
+main figcaption em {
+  font-size: 0.9rem;
 }
 
 main .profilesFooter {
@@ -290,6 +302,7 @@ main .profilesFooter {
 
 main .call-to-action {
   background-color: #F67E7E;
+  position: relative;
 }
 
 main .call-to-actionContainer {
@@ -457,7 +470,8 @@ svg.hamburger:hover {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  main h3, main p {
+  main h3,
+  main p {
     text-align: left;
     margin-left: 50px;
   }
@@ -466,6 +480,69 @@ svg.hamburger:hover {
   }
   main h2 {
     width: 70%;
+  }
+  main blockquote {
+    width: 90%;
+  }
+  main .call-to-actionContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    position: relative;
+    top: 90px;
+  }
+  main .call-to-actionContainer h3 {
+    padding-top: 0;
+  }
+  footer ul {
+    margin-left: 31px;
+  }
+  footer .footerSection {
+    width: 82.5%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  footer address {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: 1/2/3/2;
+    text-align: right;
+  }
+  footer .footerMenu {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    grid-area: 2/1/3/1;
+  }
+  footer .copyrightContainer {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    grid-area: 3/2/4/2;
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 15px;
+  }
+  footer p.copyright {
+    text-align: right;
+    padding-bottom: 0px;
+    width: 100%;
+  }
+  footer svg.footerLogo {
+    margin-left: 0;
+  }
+  footer .social {
+    margin-left: 31px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 /*# sourceMappingURL=main.css.map */
