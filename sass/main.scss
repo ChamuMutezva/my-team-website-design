@@ -505,11 +505,30 @@ svg.hamburger:hover {
 
 //desktop version
 @media screen and (min-width: 1220px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 95%;
+        max-width: 1440px;
+    }
+
     header {
+        .navMenu {
+            width: 70.2%;
+        }
+
+        svg.logo {
+            transform: scale(1);
+            margin-left: 0;
+        }
+
         section.primary {
             display: flex;
             width: 70.2%;
             position: relative;
+        }
+
+        li.contact {
+            margin-right: 110px;
         }
 
         section.primary::before {
@@ -557,22 +576,27 @@ svg.hamburger:hover {
             flex-direction: row;
             width: 70.2%;
         }
+
         h2 {
             font-size: 3.2rem;
             width: 85.8%;
         }
+
         .heroDescriptionMore p {
             width: 80%;
             font-size: 1rem;
         }
+
         h3 {
             font-size: 1.2rem;
         }
+
         .profilesBody {
             width: 70.2%;
-            margin: auto; 
-            flex-direction: row;          
+            margin: auto;
+            flex-direction: row;
         }
+
         .profilesDescription {
             width: 30%;
         }

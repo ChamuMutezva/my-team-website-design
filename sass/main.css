@@ -547,12 +547,28 @@ svg.hamburger:hover {
 }
 
 @media screen and (min-width: 1220px) {
+  .wrapper {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1440px;
+  }
+  header .navMenu {
+    width: 70.2%;
+  }
+  header svg.logo {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    margin-left: 0;
+  }
   header section.primary {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 70.2%;
     position: relative;
+  }
+  header li.contact {
+    margin-right: 110px;
   }
   header section.primary::before {
     position: absolute;
