@@ -121,7 +121,10 @@ p {
     background-size: contain;
     background-image: url(../images/bg-pattern-home-2.svg);
     background-repeat: no-repeat;
-    margin: 80px auto 0;
+   // margin: 80px auto 0;
+    margin: auto;
+    bottom: 0;
+    right: 0;
 }
 
 main {
@@ -279,7 +282,7 @@ main {
         h3 {
             margin-top: 0;
             padding-top: 83px;
-            font-size: 2rem;
+            font-size: 2.1rem;
             color: #012F34;
             text-align: center;
         }
@@ -287,13 +290,14 @@ main {
         button {
             display: block;
             margin: auto;
-            padding: 14px 42px;
+            padding: 10px 23px;
             border-radius: 20px;
             background-color: inherit;
             border: 3px solid black;
             outline: none;
             font-weight: 700;
             color: #012F34;
+            font-size: 1.2rem;
         }
 
     }
@@ -323,7 +327,8 @@ footer {
     .footerSection {
         width: 82%;
         margin: auto;
-        padding-top: 80px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     svg.footerLogo {
@@ -346,6 +351,7 @@ footer {
         line-height: 25px;
         font-size: 1rem;
         font-weight: 600;
+        opacity: 0.6;
     }
 
     a {
@@ -363,7 +369,10 @@ footer {
 
     p.copyright {
         text-align: center;
-        padding-bottom: 98px;
+        opacity: 0.6;
+        line-height: 25px;
+        font-size: 1rem;
+        font-weight: 600;
     }
 }
 
@@ -455,6 +464,7 @@ svg.hamburger:hover {
 
             h3 {
                 padding-top: 0;
+                line-height: 32px;
             }
         }
     }
@@ -505,12 +515,13 @@ svg.hamburger:hover {
 
 //desktop version
 @media screen and (min-width: 1220px) {
-    .wrapper {
+
+    /*   .wrapper {
         margin: 0 auto;
         width: 95%;
         max-width: 1440px;
     }
-
+*/
     header {
         .navMenu {
             width: 70.2%;
@@ -528,7 +539,7 @@ svg.hamburger:hover {
         }
 
         li.contact {
-            margin-right: 110px;
+            margin-right: 24%;
         }
 
         section.primary::before {
@@ -591,6 +602,10 @@ svg.hamburger:hover {
             font-size: 1.2rem;
         }
 
+        .profilesHeader {
+            width: 74%;
+        }
+
         .profilesBody {
             width: 70.2%;
             margin: auto;
@@ -600,5 +615,52 @@ svg.hamburger:hover {
         .profilesDescription {
             width: 30%;
         }
+        .call-to-actionContainer {
+            width: 70.2%; 
+            h3 {
+                font-size: 3.2rem;
+            }          
+        }
+    }
+
+    main::before {
+        top: 304px;
+    }
+
+    //footer
+    footer {
+        .footerSection {
+            width: 70.2%;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .socialCopyright {
+            grid-area: 1/4/1/5;
+        }
+
+        .copyrightContainer {
+            grid-area: 2/4/2/5;
+        }
+
+        address {
+            grid-area: 1/2/3/2;
+            align-self: center;
+        }
+
+        .social {
+            justify-content: flex-end;
+        }
+
+        .footerLogoContainer {
+            align-self: center;
+        }
     }
 }
+/*
+@media screen and (min-width: 1450px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 95%;
+        max-width: 1440px;
+    }
+}*/

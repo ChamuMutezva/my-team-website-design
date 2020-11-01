@@ -1,0 +1,36 @@
+.secondary {
+    width: 200px;
+    height: 200px;
+    right: -100px;
+    background-image: url(../images/bg-pattern-about-1-mobile-nav-1.svg);
+    position: absolute;    
+    bottom: -100px;
+}
+header {
+    position: relative;  
+    z-index: 1;
+}
+section.primary {    
+    padding-bottom: 100px;
+}
+/*main::before{
+    background-image: url(../images/bg-pattern-about-2-contact-1.svg);
+    left: -100px;
+    top: -100px;
+    background-repeat: no-repeat;   
+}*/
+main {
+    z-index: 2;
+}
+aside {
+    position: relative;
+}
+/*
+aside::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/bg-pattern-about-2-contact-1.svg);
+}
+*/

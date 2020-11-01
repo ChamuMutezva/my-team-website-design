@@ -1,4 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700;900&display=swap");
+.secondary {
+  width: 200px;
+  height: 200px;
+  right: -100px;
+  background-image: url(../images/bg-pattern-about-1-mobile-nav-1.svg);
+  position: absolute;
+  bottom: -100px;
+}
+
+header {
+  position: relative;
+  z-index: 1;
+}
+
+section.primary {
+  padding-bottom: 100px;
+}
+
+/*main::before{
+    background-image: url(../images/bg-pattern-about-2-contact-1.svg);
+    left: -100px;
+    top: -100px;
+    background-repeat: no-repeat;   
+}*/
+main {
+  z-index: 2;
+}
+
+aside {
+  position: relative;
+}
+
+/*
+aside::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/bg-pattern-about-2-contact-1.svg);
+}
+*/
 body {
   overflow-x: hidden;
 }
@@ -133,7 +174,9 @@ p {
   background-size: contain;
   background-image: url(../images/bg-pattern-home-2.svg);
   background-repeat: no-repeat;
-  margin: 80px auto 0;
+  margin: auto;
+  bottom: 0;
+  right: 0;
 }
 
 main {
@@ -315,7 +358,7 @@ main .call-to-actionContainer {
 main .call-to-actionContainer h3 {
   margin-top: 0;
   padding-top: 83px;
-  font-size: 2rem;
+  font-size: 2.1rem;
   color: #012F34;
   text-align: center;
 }
@@ -323,13 +366,14 @@ main .call-to-actionContainer h3 {
 main .call-to-actionContainer button {
   display: block;
   margin: auto;
-  padding: 14px 42px;
+  padding: 10px 23px;
   border-radius: 20px;
   background-color: inherit;
   border: 3px solid black;
   outline: none;
   font-weight: 700;
   color: #012F34;
+  font-size: 1.2rem;
 }
 
 main .call-to-actionFooter {
@@ -355,7 +399,8 @@ footer {
 footer .footerSection {
   width: 82%;
   margin: auto;
-  padding-top: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 footer svg.footerLogo {
@@ -387,6 +432,7 @@ footer address {
   line-height: 25px;
   font-size: 1rem;
   font-weight: 600;
+  opacity: 0.6;
 }
 
 footer a {
@@ -409,7 +455,10 @@ footer .social {
 
 footer p.copyright {
   text-align: center;
-  padding-bottom: 98px;
+  opacity: 0.6;
+  line-height: 25px;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .showModal {
@@ -496,6 +545,7 @@ svg.hamburger:hover {
   }
   main .call-to-actionContainer h3 {
     padding-top: 0;
+    line-height: 32px;
   }
   footer ul {
     margin-left: 31px;
@@ -548,6 +598,12 @@ svg.hamburger:hover {
 }
 
 @media screen and (min-width: 1220px) {
+  /*   .wrapper {
+        margin: 0 auto;
+        width: 95%;
+        max-width: 1440px;
+    }
+*/
   header .navMenu {
     width: 70.2%;
   }
@@ -564,7 +620,7 @@ svg.hamburger:hover {
     position: relative;
   }
   header li.contact {
-    margin-right: 110px;
+    margin-right: 24%;
   }
   header section.primary::before {
     position: absolute;
@@ -620,6 +676,9 @@ svg.hamburger:hover {
   main h3 {
     font-size: 1.2rem;
   }
+  main .profilesHeader {
+    width: 74%;
+  }
   main .profilesBody {
     width: 70.2%;
     margin: auto;
@@ -631,8 +690,61 @@ svg.hamburger:hover {
   main .profilesDescription {
     width: 30%;
   }
+  main .call-to-actionContainer {
+    width: 70.2%;
+  }
+  main .call-to-actionContainer h3 {
+    font-size: 3.2rem;
+  }
+  main::before {
+    top: 304px;
+  }
+  footer .footerSection {
+    width: 70.2%;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  footer .socialCopyright {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-area: 1/4/1/5;
+  }
+  footer .copyrightContainer {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-area: 2/4/2/5;
+  }
+  footer address {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: 1/2/3/2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  footer .social {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  footer .footerLogoContainer {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
+/*
+@media screen and (min-width: 1450px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 95%;
+        max-width: 1440px;
+    }
+}*/
 * {
   padding: 0;
   margin: 0;

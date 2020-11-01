@@ -120,7 +120,9 @@ p {
   background-size: contain;
   background-image: url(../images/bg-pattern-home-2.svg);
   background-repeat: no-repeat;
-  margin: 80px auto 0;
+  margin: auto;
+  bottom: 0;
+  right: 0;
 }
 
 main {
@@ -253,20 +255,21 @@ main .call-to-actionContainer {
 main .call-to-actionContainer h3 {
   margin-top: 0;
   padding-top: 83px;
-  font-size: 2rem;
+  font-size: 2.1rem;
   color: #012F34;
   text-align: center;
 }
 main .call-to-actionContainer button {
   display: block;
   margin: auto;
-  padding: 14px 42px;
+  padding: 10px 23px;
   border-radius: 20px;
   background-color: inherit;
   border: 3px solid black;
   outline: none;
   font-weight: 700;
   color: #012F34;
+  font-size: 1.2rem;
 }
 main .call-to-actionFooter {
   background-image: url("../images/bg-pattern-home-6-about-5.svg");
@@ -290,7 +293,8 @@ footer {
 footer .footerSection {
   width: 82%;
   margin: auto;
-  padding-top: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 footer svg.footerLogo {
   margin: auto;
@@ -310,6 +314,7 @@ footer address {
   line-height: 25px;
   font-size: 1rem;
   font-weight: 600;
+  opacity: 0.6;
 }
 footer a {
   font-weight: 600;
@@ -324,7 +329,10 @@ footer .social {
 }
 footer p.copyright {
   text-align: center;
-  padding-bottom: 98px;
+  opacity: 0.6;
+  line-height: 25px;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .showModal {
@@ -409,6 +417,7 @@ main p {
   }
   main .call-to-actionContainer h3 {
     padding-top: 0;
+    line-height: 32px;
   }
 
   footer ul {
@@ -446,12 +455,12 @@ main p {
   }
 }
 @media screen and (min-width: 1220px) {
-  .wrapper {
-    margin: 0 auto;
-    width: 95%;
-    max-width: 1440px;
-  }
-
+  /*   .wrapper {
+          margin: 0 auto;
+          width: 95%;
+          max-width: 1440px;
+      }
+  */
   header .navMenu {
     width: 70.2%;
   }
@@ -465,7 +474,7 @@ main p {
     position: relative;
   }
   header li.contact {
-    margin-right: 110px;
+    margin-right: 24%;
   }
   header section.primary::before {
     position: absolute;
@@ -516,6 +525,9 @@ main p {
   main h3 {
     font-size: 1.2rem;
   }
+  main .profilesHeader {
+    width: 74%;
+  }
   main .profilesBody {
     width: 70.2%;
     margin: auto;
@@ -524,4 +536,43 @@ main p {
   main .profilesDescription {
     width: 30%;
   }
+  main .call-to-actionContainer {
+    width: 70.2%;
+  }
+  main .call-to-actionContainer h3 {
+    font-size: 3.2rem;
+  }
+
+  main::before {
+    top: 304px;
+  }
+
+  footer .footerSection {
+    width: 70.2%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  footer .socialCopyright {
+    grid-area: 1/4/1/5;
+  }
+  footer .copyrightContainer {
+    grid-area: 2/4/2/5;
+  }
+  footer address {
+    grid-area: 1/2/3/2;
+    align-self: center;
+  }
+  footer .social {
+    justify-content: flex-end;
+  }
+  footer .footerLogoContainer {
+    align-self: center;
+  }
 }
+/*
+@media screen and (min-width: 1450px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 95%;
+        max-width: 1440px;
+    }
+}*/
