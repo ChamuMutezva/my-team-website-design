@@ -37,6 +37,35 @@ main .card {
   position: relative;
 }
 
+main .cardModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+main .cardModal h3 {
+  padding-top: 20px;
+}
+
+main .cardModal blockquote {
+  width: 72%;
+}
+
+main .socialProfiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
 main .cross {
   width: 56px;
   height: 56px;
@@ -45,6 +74,8 @@ main .cross {
   left: 44%;
   bottom: -28px;
   border-radius: 50%;
+  text-align: center;
+  line-height: 56px;
 }
 
 main figure.businessCard {
