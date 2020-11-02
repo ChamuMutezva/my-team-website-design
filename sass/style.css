@@ -27,6 +27,41 @@ main {
   z-index: 2;
 }
 
+main .profilesDescription {
+  margin: 20px auto 50px;
+}
+
+main .card {
+  background-color: #012F34;
+  padding: 20px 10px;
+  position: relative;
+}
+
+main .cross {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  background-color: #f67e7e;
+  left: 44%;
+  bottom: -28px;
+  border-radius: 50%;
+}
+
+main figure.businessCard {
+  width: 279px;
+  margin: 32px auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* padding: 24px 0; */
+}
+
+main figure.businessCard img {
+  width: 96px;
+  height: 96px;
+}
+
 aside {
   position: relative;
 }
