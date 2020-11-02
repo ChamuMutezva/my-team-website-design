@@ -25,6 +25,21 @@ section.primary {
 main {
   z-index: 2;
 }
+main .card {
+  background-color: #012F34;
+  padding: 20px 10px;
+}
+main figure.businessCard {
+  width: 279px;
+  margin: 32px auto;
+  background-color: #6435a5;
+  flex-direction: column;
+  /* padding: 24px 0; */
+}
+main figure.businessCard img {
+  width: 96px;
+  height: 96px;
+}
 
 aside {
   position: relative;
