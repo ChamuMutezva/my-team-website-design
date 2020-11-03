@@ -188,6 +188,13 @@ aside::before {
 }
 */
 @media screen and (min-width: 768px) {
+  header .secondary {
+    width: 200px;
+    height: 200px;
+    right: -100px;
+    bottom: 0px;
+    margin-right: 0;
+  }
   main .clientSection {
     width: 100%;
   }
@@ -202,10 +209,6 @@ aside::before {
 @media screen and (min-width: 1220px) {
   main .profilesDescription {
     width: 100%;
-  }
-  .secondary {
-    right: -100px;
-    bottom: 0px;
   }
 }
 
