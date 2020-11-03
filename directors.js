@@ -37,4 +37,5 @@ const directorsList = [
     },
     
 ]
+export {directorsList}
  

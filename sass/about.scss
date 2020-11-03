@@ -94,6 +94,27 @@ main {
             height: 96px;
         }
     }
+
+    .profilesWrapper {
+        position: relative;
+        background-color: #004047;
+    }
+
+    .profilesWrapper::before {
+        content: "";
+        width: 147px;
+        height: 100px;
+        background-image: url("../images/bg-pattern-home-4-about-3.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+main::before {
+    visibility: hidden;
 }
 
 aside {

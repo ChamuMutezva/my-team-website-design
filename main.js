@@ -1,3 +1,4 @@
+//import { directorsList } from './directors'
 const openModal = document.querySelector(".hamburger");
 const modal = document.querySelector(".modal");
 const closeMenu = document.querySelector(".closemenu")
