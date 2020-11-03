@@ -27,6 +27,7 @@ main {
 }
 
 main .profilesDescription {
+  background-image: none;
   margin: 20px auto 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,6 +122,7 @@ main figure.businessCard img {
 main .profilesWrapper {
   position: relative;
   background-color: #004047;
+  padding-bottom: 5px;
 }
 
 main .profilesWrapper::before {
@@ -133,6 +135,38 @@ main .profilesWrapper::before {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+main .clientSection {
+  background-color: #012F34;
+  text-align: center;
+  width: 82%;
+  margin: auto;
+  padding-top: 90px;
+}
+
+main .clientSection img {
+  width: 175px;
+  display: block;
+  margin: auto;
+}
+
+main .clients {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 50px;
 }
 
 main::before {
@@ -152,9 +186,28 @@ aside::before {
     background-image: url(../images/bg-pattern-about-2-contact-1.svg);
 }
 */
+@media screen and (min-width: 768px) {
+  header .secondary {
+    width: 200px;
+    height: 200px;
+    right: -100px;
+    bottom: 0px;
+    margin-right: 0;
+  }
+  main .clientSection {
+    width: 100%;
+  }
+  main .clientSection img {
+    width: 100px;
+  }
+  main .clients {
+    gap: 20px;
+  }
+}
+
 @media screen and (min-width: 1220px) {
   main .profilesDescription {
-    width: 82%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=about.css.map */

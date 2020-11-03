@@ -26,6 +26,7 @@ main {
     z-index: 2;
 
     .profilesDescription {
+        background-image: none;
         margin: 20px auto 50px;
         display: flex;
         flex-direction: row;
@@ -98,6 +99,7 @@ main {
     .profilesWrapper {
         position: relative;
         background-color: #004047;
+        padding-bottom: 5px;
     }
 
     .profilesWrapper::before {
@@ -110,6 +112,30 @@ main {
         position: absolute;
         bottom: 0;
         right: 0;
+    }
+
+    .clientSection {
+        background-color: #012F34;
+        text-align: center;
+        width: 82%;
+        margin: auto;
+        padding-top: 90px;
+
+        img {
+            width: 175px;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    .clients {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 50px;
     }
 }
 
@@ -130,10 +156,38 @@ aside::before {
     background-image: url(../images/bg-pattern-about-2-contact-1.svg);
 }
 */
-@media screen and (min-width: 1220px) {
-    main {
-        .profilesDescription {
-            width: 82%;
+@media screen and (min-width: 768px) {
+    header {
+        .secondary {
+            width: 200px;
+            height: 200px;
+            right: -100px;
+            bottom: 0px;
+            margin-right: 0;
         }
     }
+    main {
+        .clientSection {
+            width: 100%;
+
+            img {
+                width: 100px;
+            }
+        }
+
+        .clients {
+            gap: 20px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1220px) {  
+
+    main {
+        .profilesDescription {
+            width: 100%;
+        }
+    }
+
 }
