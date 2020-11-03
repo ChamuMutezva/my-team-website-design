@@ -27,11 +27,22 @@ main {
 }
 main .profilesDescription {
   margin: 20px auto 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
 }
 main .card {
   background-color: #012F34;
   padding: 20px 10px;
   position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 327px;
 }
 main .cardModal {
   opacity: 0;
@@ -89,3 +100,8 @@ aside::before {
     background-image: url(../images/bg-pattern-about-2-contact-1.svg);
 }
 */
+@media screen and (min-width: 1220px) {
+  main .profilesDescription {
+    width: 82%;
+  }
+}

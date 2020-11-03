@@ -27,13 +27,25 @@ main {
 
     .profilesDescription {
         margin: 20px auto 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
     }
 
     .card {
         background-color: #012F34;
         padding: 20px 10px;
         position: relative;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 327px;
     }
+
     .cardModal {
         opacity: 0;
         position: absolute;
@@ -43,18 +55,22 @@ main {
         height: 100%;
         margin: auto;
         text-align: center;
+
         h3 {
             padding-top: 20px;
         }
+
         blockquote {
             width: 72%;
         }
     }
+
     .socialProfiles {
         display: flex;
         justify-content: center;
         column-gap: 20px;
     }
+
     .cross {
         width: 56px;
         height: 56px;
@@ -93,3 +109,10 @@ aside::before {
     background-image: url(../images/bg-pattern-about-2-contact-1.svg);
 }
 */
+@media screen and (min-width: 1220px) {
+    main {
+        .profilesDescription {
+            width: 82%;
+        }
+    }
+}
