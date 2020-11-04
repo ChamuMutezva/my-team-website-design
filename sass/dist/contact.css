@@ -1,20 +1,30 @@
+.secondary {
+  height: 0px;
+  display: none;
+}
+
 label {
+  min-width: 45%;
+  width: 325px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding-top: 15px;
+  margin: auto;
 }
 
-input, textarea {
+input,
+textarea {
   background-color: inherit;
-  color: white;
+  color: #b49595;
   border: none;
   outline: none;
   border-bottom: 2px solid white;
   padding-bottom: 10px;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   background-color: inherit;
 }
 
@@ -37,4 +47,30 @@ input[type=submit] {
 form {
   width: 82%;
   margin: auto;
+}
+
+main::before {
+  background-image: url("../images/bg-pattern-contact-2.svg");
+  visibility: visible;
+  bottom: -128px;
+  background-repeat: no-repeat;
+}
+
+main {
+  z-index: -1;
+  padding-bottom: 100px;
+  background-color: inherit;
+}
+main section.hero {
+  padding-top: 40px;
+}
+main .heroDescription {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+section.primary {
+  padding-bottom: 0;
 }

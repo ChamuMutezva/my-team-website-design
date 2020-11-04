@@ -1,23 +1,37 @@
-label {   
+.secondary {
+    height: 0px;
+    display: none;
+}
+
+label {
+    min-width: 45%;
+    width: 325px;
     display: flex;
     flex-direction: column;
-    gap: 20px;  
-    padding-top: 15px; 
+    gap: 20px;
+    padding-top: 15px;
+    margin: auto;
 }
-input, textarea {
+
+input,
+textarea {
     background-color: inherit;
-    color: white;
+    color: rgb(180, 149, 149);
     border: none;
     outline: none;
     border-bottom: 2px solid white;
     padding-bottom: 10px;
 }
-input:focus, textarea:focus{
+
+input:focus,
+textarea:focus {
     background-color: inherit;
 }
+
 textarea {
     resize: none;
 }
+
 input[type="submit"] {
     width: 123px;
     padding: 8px;
@@ -29,7 +43,36 @@ input[type="submit"] {
     font-size: 1.2rem;
     font-weight: 600;
 }
+
 form {
     width: 82%;
     margin: auto;
+}
+
+main::before {
+    background-image: url('../images/bg-pattern-contact-2.svg');
+    visibility: visible;
+    bottom: -128px;
+    background-repeat: no-repeat;
+}
+
+main {
+    z-index: -1;
+    padding-bottom: 100px;
+    background-color: inherit;
+
+    section.hero {
+        padding-top: 40px;
+    }
+
+    .heroDescription {
+        display: flex;
+        align-items: center;
+        align-items: center;
+    flex-wrap: nowrap;
+    }
+}
+
+section.primary {
+    padding-bottom: 0;
 }
