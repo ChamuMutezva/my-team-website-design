@@ -2,6 +2,9 @@
     height: 0px;
     display: none;
 }
+h1 span {   
+    font-size: 2.1rem;
+}
 
 label {
     min-width: 45%;
@@ -62,6 +65,7 @@ main {
     background-color: inherit;
 
     section.hero {
+        width: 61.7%;
         padding-top: 40px;
     }
 
@@ -69,7 +73,18 @@ main {
         display: flex;
         align-items: center;
         align-items: center;
-    flex-wrap: nowrap;
+        flex-wrap: nowrap;
+
+        img {
+            width: 72px;
+            height: 72px;
+            margin: auto;
+        }
+    }
+
+    .heroDescriptionMore {
+        text-align: left;
+        width: 65%;
     }
 }
 

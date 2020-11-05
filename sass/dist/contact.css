@@ -3,6 +3,10 @@
   display: none;
 }
 
+h1 span {
+  font-size: 2.1rem;
+}
+
 label {
   min-width: 45%;
   width: 325px;
@@ -62,6 +66,7 @@ main {
   background-color: inherit;
 }
 main section.hero {
+  width: 61.7%;
   padding-top: 40px;
 }
 main .heroDescription {
@@ -69,6 +74,15 @@ main .heroDescription {
   align-items: center;
   align-items: center;
   flex-wrap: nowrap;
+}
+main .heroDescription img {
+  width: 72px;
+  height: 72px;
+  margin: auto;
+}
+main .heroDescriptionMore {
+  text-align: left;
+  width: 65%;
 }
 
 section.primary {
