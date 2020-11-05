@@ -9,7 +9,6 @@ h1 span {
 
 label {
   min-width: 45%;
-  width: 325px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,6 +19,13 @@ label {
   gap: 20px;
   padding-top: 15px;
   margin: auto;
+  font-size: 1rem;
+}
+
+.btnWrapper {
+  min-width: 45%;
+  width: 325px;
+  margin: auto 0;
 }
 
 input,
@@ -54,7 +60,7 @@ input[type="submit"] {
 }
 
 form {
-  width: 82%;
+  width: 61.7%;
   margin: auto;
 }
 
@@ -86,12 +92,13 @@ main .heroDescription {
   align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  gap: 25px;
 }
 
 main .heroDescription img {
   width: 72px;
   height: 72px;
-  margin: auto;
+  margin: auto 0;
 }
 
 main .heroDescriptionMore {
@@ -101,5 +108,53 @@ main .heroDescriptionMore {
 
 section.primary {
   padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  header section.primary::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/bg-pattern-home-1.svg);
+    left: -12%;
+  }
+  main section.hero, main form {
+    width: 60.3%;
+  }
+  main .heroBody {
+    padding-top: 0;
+  }
+  main .heroDescriptionMore {
+    width: 81.5%;
+  }
+  main .heroDescriptionMore p {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header section.primary::before {
+    left: -31%;
+  }
+  h1 {
+    text-align: left;
+    margin-left: 40px;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  main section.hero, main form {
+    width: 40.3%;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

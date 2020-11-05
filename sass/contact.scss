@@ -2,18 +2,26 @@
     height: 0px;
     display: none;
 }
-h1 span {   
+
+h1 span {
     font-size: 2.1rem;
 }
 
 label {
     min-width: 45%;
-    width: 325px;
+   // width: 325px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-top: 15px;
     margin: auto;
+    font-size: 1rem;
+}
+
+.btnWrapper {
+    min-width: 45%;
+    width: 325px;
+    margin: auto 0;
 }
 
 input,
@@ -48,7 +56,7 @@ input[type="submit"] {
 }
 
 form {
-    width: 82%;
+    width: 61.7%;
     margin: auto;
 }
 
@@ -74,11 +82,11 @@ main {
         align-items: center;
         align-items: center;
         flex-wrap: nowrap;
-
+        gap: 25px;
         img {
             width: 72px;
             height: 72px;
-            margin: auto;
+            margin: auto 0;
         }
     }
 
@@ -90,4 +98,54 @@ main {
 
 section.primary {
     padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        section.primary::before {
+            position: absolute;
+            content: "";
+            width: 200px;
+            height: 200px;
+            background-image: url(../images/bg-pattern-home-1.svg);
+            left: -12%;
+        }
+    }
+
+    main {
+        section.hero, form {
+            width: 60.3%;
+        }
+        .heroBody {
+            padding-top: 0;
+        }
+        .heroDescriptionMore {            
+            width: 81.5%;
+        p {
+            width: 100%;
+            font-size: 1.2rem;
+        }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    header {
+        section.primary::before {
+            left: -31%;
+        }
+    }
+    h1 {
+        text-align: left;
+        margin-left: 40px;
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        section.hero, form {
+            width: 40.3%;
+        }
+    }
+
 }
