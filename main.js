@@ -4,9 +4,8 @@ const closeMenu = document.querySelector(".closemenu");
 const modal = document.querySelector(".modal");
 const cross = Array.from(document.querySelectorAll(".cross"));
 const allCards = document.querySelector(".allCards");
-//clickTarget.closest("li") to find nearest li tag 
-console.log(allCards);
-//console.log(cross)
+
+//nav - modal menu for all pages
 openModal.addEventListener("click", () => {
     modal.classList.toggle("showModal")
 })
@@ -14,18 +13,18 @@ closeMenu.addEventListener("click", () => {
     console.log("i have been clicked")
     modal.classList.toggle("showModal")
 })
+//end of nav - modal
+
+//about page - flip card to show additional information
 allCards.addEventListener("click", (event) => {
     const clickedTarget = event.target;
     console.log(clickedTarget)
-    if(clickedTarget.closest("div").classList.contains("cross")){
-        const allFigures = Array.from(document.querySelectorAll("figure"))
+    if(clickedTarget.closest("div").classList.contains("cross")){       
         console.log(clickedTarget.closest("div").nextElementSibling)
-       clickedTarget.closest("div").nextElementSibling.classList.toggle("displayCardModal");
-       const figureTarget = document.querySelector("figure")
-       clickedTarget.closest("figure").previousElementSibling.classList.toggle("hideBusinessCard");
-      // console.log(allFigures)
-      // figureTarget.classList.toggle("hideBusinessCard");
+       clickedTarget.closest("div").nextElementSibling.classList.toggle("displayCardModal"); 
+          clickedTarget.closest("div").classList.toggle("crossClicked");
     }
 
 })
+//end of about page implementation
 

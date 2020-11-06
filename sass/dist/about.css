@@ -60,6 +60,7 @@ main .cardModal h3 {
 }
 main .cardModal blockquote {
   width: 72%;
+  margin: 25px auto;
 }
 main .displayCardModal {
   display: block;
@@ -81,6 +82,9 @@ main .cross {
   text-align: center;
   line-height: 56px;
   z-index: 10;
+}
+main .crossClicked {
+  background-color: #79C8C7;
 }
 main figure.businessCard {
   width: 279px;

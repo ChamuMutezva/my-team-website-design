@@ -46,7 +46,7 @@ main {
         gap: 20px;
         width: 327px;
     }
-   
+
     .cardModal {
         display: none;
         position: absolute;
@@ -63,8 +63,10 @@ main {
 
         blockquote {
             width: 72%;
+            margin: 25px auto;
         }
     }
+
     .displayCardModal {
         display: block;
         background-color: inherit;
@@ -87,6 +89,10 @@ main {
         text-align: center;
         line-height: 56px;
         z-index: 10;
+    }
+
+    .crossClicked {
+        background-color: #79C8C7;
     }
 
     figure.businessCard {
@@ -166,6 +172,7 @@ aside {
             margin-right: 0;
         }
     }
+
     main {
         .clientSection {
             width: 100%;
@@ -182,7 +189,7 @@ aside {
 
 }
 
-@media screen and (min-width: 1220px) {  
+@media screen and (min-width: 1220px) {
 
     main {
         .profilesDescription {
