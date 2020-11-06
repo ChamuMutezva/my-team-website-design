@@ -83,6 +83,9 @@ main .cross {
   line-height: 56px;
   z-index: 10;
 }
+main .cross:hover {
+  background-color: #79C8C7;
+}
 main .crossClicked {
   background-color: #79C8C7;
 }

@@ -59,6 +59,11 @@ input[type="submit"] {
   font-weight: 600;
 }
 
+input[type="submit"]:hover {
+  background-color: #5f5757;
+  width: 120px;
+}
+
 form {
   width: 61.7%;
   margin: auto;

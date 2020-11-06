@@ -47,7 +47,7 @@ main .card {
   width: 327px;
 }
 main .cardModal {
-  opacity: 0;
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -61,6 +61,11 @@ main .cardModal h3 {
 }
 main .cardModal blockquote {
   width: 72%;
+  margin: 25px auto;
+}
+main .displayCardModal {
+  display: block;
+  background-color: inherit;
 }
 main .socialProfiles {
   display: flex;
@@ -77,6 +82,13 @@ main .cross {
   border-radius: 50%;
   text-align: center;
   line-height: 56px;
+  z-index: 10;
+}
+main .cross:hover {
+  background-color: #79C8C7;
+}
+main .crossClicked {
+  background-color: #79C8C7;
 }
 main figure.businessCard {
   width: 279px;
@@ -87,6 +99,9 @@ main figure.businessCard {
 main figure.businessCard img {
   width: 96px;
   height: 96px;
+}
+main .hideBusinessCard {
+  opacity: 0;
 }
 main .profilesWrapper {
   position: relative;
@@ -134,15 +149,6 @@ aside {
   position: relative;
 }
 
-/*
-aside::before {
-    position: absolute;
-    content: "";
-    width: 200px;
-    height: 200px;
-    background-image: url(../images/bg-pattern-about-2-contact-1.svg);
-}
-*/
 @media screen and (min-width: 768px) {
   header .secondary {
     width: 200px;

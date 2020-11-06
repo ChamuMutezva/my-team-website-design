@@ -5,7 +5,9 @@ var openModal = document.querySelector(".hamburger");
 var closeMenu = document.querySelector(".closemenu");
 var modal = document.querySelector(".modal");
 var cross = Array.from(document.querySelectorAll(".cross"));
-var allCards = document.querySelector(".allCards"); //nav - modal menu for all pages
+var allCards = document.querySelector(".allCards");
+var form = document.querySelector("form");
+console.log(form); //nav - modal menu for all pages
 
 openModal.addEventListener("click", function () {
   modal.classList.toggle("showModal");
@@ -16,13 +18,22 @@ closeMenu.addEventListener("click", function () {
 }); //end of nav - modal
 //about page - flip card to show additional information
 
-allCards.addEventListener("click", function (event) {
-  var clickedTarget = event.target;
-  console.log(clickedTarget);
+if (allCards !== null) {
+  allCards.addEventListener("click", function (event) {
+    var clickedTarget = event.target;
+    console.log(clickedTarget);
 
-  if (clickedTarget.closest("div").classList.contains("cross")) {
-    console.log(clickedTarget.closest("div").nextElementSibling);
-    clickedTarget.closest("div").nextElementSibling.classList.toggle("displayCardModal");
-    clickedTarget.closest("div").classList.toggle("crossClicked");
-  }
-}); //end of about page implementation
+    if (clickedTarget.closest("div").classList.contains("cross")) {
+      console.log(clickedTarget.closest("div").nextElementSibling);
+      clickedTarget.closest("div").nextElementSibling.classList.toggle("displayCardModal");
+      clickedTarget.closest("div").classList.toggle("crossClicked");
+    }
+  });
+} //end of about page implementation
+
+
+if (form !== null) {
+  form.addEventListener("submit", function (evt) {
+    console.log(evt.target);
+  });
+}
