@@ -36,5 +36,6 @@ if (allCards !== null) {
 if (form !== null) {
   form.addEventListener("submit", function (evt) {
     console.log(evt.target);
+    evt.preventDefault();
   });
 }
