@@ -499,6 +499,7 @@ main p {
     height: 200px;
     background-image: url("../images/bg-pattern-home-1.svg");
     left: -31%;
+    top: 0;
   }
   header p {
     position: relative;
@@ -591,7 +592,6 @@ main p {
 @media screen and (min-width: 1600px) {
   .wrapper {
     margin: 0 auto;
-    width: 95%;
-    max-width: 1440px;
+    max-width: 1600px;
   }
 }

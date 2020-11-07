@@ -200,7 +200,6 @@ footer {
 
 header {
   position: relative;
-  z-index: 1;
 }
 
 section.primary {
@@ -289,6 +288,11 @@ main .socialProfiles {
           column-gap: 20px;
 }
 
+main .socialProfiles .twitter path:hover,
+main .socialProfiles .instagram path:hover {
+  fill: #f67e7e;
+}
+
 main .cross {
   width: 56px;
   height: 56px;
@@ -347,7 +351,13 @@ main .profilesWrapper::before {
   right: 0;
 }
 
+main .profiles {
+  position: relative;
+  z-index: 200;
+}
+
 main .clientSection {
+  position: relative;
   background-color: #012F34;
   text-align: center;
   width: 82%;
@@ -359,6 +369,16 @@ main .clientSection img {
   width: 175px;
   display: block;
   margin: auto;
+}
+
+main .clientSection::before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/bg-pattern-about-4.svg");
+  top: -100px;
+  left: -150px;
 }
 
 main .clients {
@@ -407,6 +427,9 @@ aside {
 }
 
 @media screen and (min-width: 1220px) {
+  header section.primary::before {
+    bottom: -200px;
+  }
   main .profilesDescription {
     width: 100%;
   }
@@ -1020,6 +1043,7 @@ svg.hamburger:hover {
     height: 200px;
     background-image: url("../images/bg-pattern-home-1.svg");
     left: -31%;
+    top: 0;
   }
   header p {
     position: relative;
@@ -1136,11 +1160,10 @@ svg.hamburger:hover {
   }
 }
 
-@media screen and (min-width: 1650px) {
+@media screen and (min-width: 1600px) {
   .wrapper {
     margin: 0 auto;
-    width: 95%;
-    max-width: 1440px;
+    max-width: 1600px;
   }
 }
 

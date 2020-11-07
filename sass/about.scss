@@ -9,7 +9,7 @@
 
 header {
     position: relative;
-    z-index: 1;
+    //  z-index: 1;
 }
 
 section.primary {
@@ -76,6 +76,11 @@ main {
         display: flex;
         justify-content: center;
         column-gap: 20px;
+
+        .twitter path:hover,
+        .instagram path:hover {
+            fill: #f67e7e;
+        }
     }
 
     .cross {
@@ -133,7 +138,13 @@ main {
         right: 0;
     }
 
+    .profiles {
+        position: relative;
+        z-index: 200;
+    }
+
     .clientSection {
+        position: relative;
         background-color: #012F34;
         text-align: center;
         width: 82%;
@@ -145,6 +156,16 @@ main {
             display: block;
             margin: auto;
         }
+    }
+
+    .clientSection::before {
+        position: absolute;
+        content: "";
+        width: 200px;
+        height: 200px;
+        background-image: url("../images/bg-pattern-about-4.svg");
+        top: -100px;
+        left: -150px;
     }
 
     .clients {
@@ -189,15 +210,36 @@ aside {
         .clients {
             gap: 20px;
         }
+
+        .clientSection::before {
+            top: -100px;
+            left: 0px;
+        }
     }
 
 }
 
 @media screen and (min-width: 1220px) {
+    header {
+        section.primary::before {
+            bottom: -200px;
+        }
+    }
 
     main {
         .profilesDescription {
             width: 100%;
+        }
+        .clientList h2 {
+            margin-top: 65px;
+            margin-bottom: 100px;
+        }
+        .clients {
+            margin-top: 45px;
+        }
+        .clientSection::before {
+            top: 0px;
+            left: 0px;
         }
     }
 

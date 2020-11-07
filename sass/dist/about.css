@@ -9,7 +9,6 @@
 
 header {
   position: relative;
-  z-index: 1;
 }
 
 section.primary {
@@ -71,6 +70,10 @@ main .socialProfiles {
   justify-content: center;
   column-gap: 20px;
 }
+main .socialProfiles .twitter path:hover,
+main .socialProfiles .instagram path:hover {
+  fill: #f67e7e;
+}
 main .cross {
   width: 56px;
   height: 56px;
@@ -118,7 +121,12 @@ main .profilesWrapper::before {
   bottom: 0;
   right: 0;
 }
+main .profiles {
+  position: relative;
+  z-index: 200;
+}
 main .clientSection {
+  position: relative;
   background-color: #012F34;
   text-align: center;
   width: 82%;
@@ -129,6 +137,15 @@ main .clientSection img {
   width: 175px;
   display: block;
   margin: auto;
+}
+main .clientSection::before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/bg-pattern-about-4.svg");
+  top: -100px;
+  left: -150px;
 }
 main .clients {
   margin-top: 30px;
@@ -166,9 +183,28 @@ aside {
   main .clients {
     gap: 20px;
   }
+  main .clientSection::before {
+    top: -100px;
+    left: 0px;
+  }
 }
 @media screen and (min-width: 1220px) {
+  header section.primary::before {
+    bottom: -200px;
+  }
+
   main .profilesDescription {
     width: 100%;
+  }
+  main .clientList h2 {
+    margin-top: 65px;
+    margin-bottom: 100px;
+  }
+  main .clients {
+    margin-top: 45px;
+  }
+  main .clientSection::before {
+    top: 0px;
+    left: 0px;
   }
 }
