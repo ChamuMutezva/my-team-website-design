@@ -301,6 +301,10 @@ main {
             font-size: 1.2rem;
         }
 
+        a {
+            color: #012F34;
+        }
+
     }
 
     .call-to-actionFooter {
@@ -366,6 +370,7 @@ footer {
         display: flex;
         justify-content: center;
         column-gap: 20px;
+        align-items: baseline;
     }
 
     p.copyright {
@@ -594,6 +599,7 @@ svg.hamburger:hover {
     main {
         flex-direction: column;
         flex-wrap: nowrap;
+
         section.hero {
             display: flex;
             flex-wrap: nowrap;

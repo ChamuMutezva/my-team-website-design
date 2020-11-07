@@ -50,7 +50,9 @@ textarea {
 input[type="submit"] {
     width: 123px;
     padding: 10px 8px;
-    background-color: white;   
+    background-color: white;
+    border: none;
+    color:  #012F34;   
     margin: 30px auto;
     border-radius: 20px;
     line-height: 28px;
@@ -58,7 +60,8 @@ input[type="submit"] {
     font-weight: 600;
 }
 input[type="submit"]:hover {
-    background-color: rgb(95, 87, 87);
+    background-color:  #012F34;
+    color: white;
     width: 120px;
 }
 

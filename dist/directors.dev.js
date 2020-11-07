@@ -1,9 +1,5 @@
 "use strict";
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.directorsList = void 0;
 var directorsList = [{
   name: "Nikita Marks",
   position: "Founder & CEO",
@@ -35,4 +31,3 @@ var directorsList = [{
   profileUrl: "./images/avatar-aden.jpg",
   remarks: "Empowered teams create truly amazing products. Set the north star and let them follow it."
 }];
-exports.directorsList = directorsList;

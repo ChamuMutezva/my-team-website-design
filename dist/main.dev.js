@@ -1,6 +1,5 @@
 "use strict";
 
-//import { directorsList } from './directors'
 var openModal = document.querySelector(".hamburger");
 var closeMenu = document.querySelector(".closemenu");
 var modal = document.querySelector(".modal");

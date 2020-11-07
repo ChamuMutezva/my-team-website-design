@@ -335,6 +335,10 @@ main .call-to-actionContainer button {
   font-size: 1.2rem;
 }
 
+main .call-to-actionContainer a {
+  color: #012F34;
+}
+
 main .call-to-actionFooter {
   background-image: url("../images/bg-pattern-home-6-about-5.svg");
   width: 100%;
@@ -410,6 +414,9 @@ footer .social {
           justify-content: center;
   -webkit-column-gap: 20px;
           column-gap: 20px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 footer p.copyright {

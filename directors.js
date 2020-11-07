@@ -37,5 +37,3 @@ const directorsList = [
     },
     
 ]
-export {directorsList}
- 
