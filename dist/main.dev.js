@@ -5,6 +5,7 @@ var closeMenu = document.querySelector(".closemenu");
 var modal = document.querySelector(".modal");
 var cross = Array.from(document.querySelectorAll(".cross"));
 var allCards = document.querySelector(".allCards");
+var inputs = Array.from(document.querySelectorAll(".feedback"));
 var form = document.querySelector("form");
 console.log(form); //nav - modal menu for all pages
 
@@ -35,6 +36,18 @@ if (allCards !== null) {
 if (form !== null) {
   form.addEventListener("submit", function (evt) {
     console.log(evt.target);
+    inputs.forEach(function (input) {
+      console.log(input);
+
+      if (input.value == "") {
+        console.log(input); //  input.setCustomValidity("First Name can not be blank")
+        // input.nextElementSibling.classList.add("errorDisplay");
+        //input.nextElementSibling.innerHTML = `${input.name} cannot be empty`;
+      } else {// input.setCustomValidity("")
+          //input.nextElementSibling.classList.remove("errorDisplay");
+          //input.nextElementSibling.innerHTML = "";
+        }
+    });
     evt.preventDefault();
   });
 }

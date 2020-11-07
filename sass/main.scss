@@ -131,7 +131,6 @@ main {
     background-color: #012F34;
     position: relative;
 
-    // padding-bottom: 0px; //fix import 1
     section.hero {
         width: 82%;
         margin: auto;
@@ -303,6 +302,9 @@ main {
 
         a {
             color: #012F34;
+        }
+        a:hover {
+            color: white;
         }
 
     }
@@ -678,11 +680,11 @@ svg.hamburger:hover {
     }
 }
 
-/*
-@media screen and (min-width: 1450px) {
+
+@media screen and (min-width: 1600px) {
     .wrapper {
         margin: 0 auto;
         width: 95%;
         max-width: 1440px;
     }
-}*/
+}

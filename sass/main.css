@@ -339,6 +339,10 @@ main .call-to-actionContainer a {
   color: #012F34;
 }
 
+main .call-to-actionContainer a:hover {
+  color: white;
+}
+
 main .call-to-actionFooter {
   background-image: url("../images/bg-pattern-home-6-about-5.svg");
   width: 100%;
@@ -718,12 +722,11 @@ svg.hamburger:hover {
   }
 }
 
-/*
-@media screen and (min-width: 1450px) {
-    .wrapper {
-        margin: 0 auto;
-        width: 95%;
-        max-width: 1440px;
-    }
-}*/
+@media screen and (min-width: 1600px) {
+  .wrapper {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1440px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
