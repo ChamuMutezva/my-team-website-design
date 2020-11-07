@@ -25,6 +25,7 @@ label {
 
 input,
 textarea {
+  background-color: inherit;
   color: #070101;
   border: none;
   outline: none;
@@ -32,11 +33,11 @@ textarea {
   padding-bottom: 10px;
 }
 
-/*input:focus,
+input:focus,
 textarea:focus {
-    background-color: inherit;
+  background-color: inherit;
 }
-*/
+
 textarea {
   resize: none;
 }
@@ -45,7 +46,6 @@ input[type=submit] {
   width: 123px;
   padding: 8px;
   background-color: white;
-  color: #004047;
   margin: 30px auto;
   border-radius: 20px;
   line-height: 28px;
@@ -71,7 +71,6 @@ main::before {
 }
 
 main {
-  z-index: -1;
   padding-bottom: 100px;
   background-color: inherit;
   padding-bottom: 0;
@@ -99,6 +98,11 @@ main .heroDescriptionMore {
 
 section.primary {
   padding-bottom: 0;
+}
+
+footer {
+  position: relative;
+  z-index: 3;
 }
 
 @media screen and (min-width: 768px) {

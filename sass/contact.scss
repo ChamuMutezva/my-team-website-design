@@ -26,7 +26,7 @@ label {
 
 input,
 textarea {
-   // background-color: inherit;
+    background-color: inherit;
     color: rgb(7, 1, 1);
     border: none;
     outline: none;
@@ -34,11 +34,11 @@ textarea {
     padding-bottom: 10px;
 }
 
-/*input:focus,
+input:focus,
 textarea:focus {
     background-color: inherit;
 }
-*/
+
 textarea {
     resize: none;
 }
@@ -46,8 +46,7 @@ textarea {
 input[type="submit"] {
     width: 123px;
     padding: 8px;
-    background-color: white;
-    color: #004047;
+    background-color: white;   
     margin: 30px auto;
     border-radius: 20px;
     line-height: 28px;
@@ -72,7 +71,7 @@ main::before {
 }
 
 main {   
-    z-index: -1;
+   // z-index: -1;
     padding-bottom: 100px;
     background-color: inherit;
     padding-bottom: 0;
@@ -102,6 +101,10 @@ main {
 
 section.primary {
     padding-bottom: 0;
+}
+footer {
+    position: relative;
+    z-index: 3;
 }
 
 
