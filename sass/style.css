@@ -1,5 +1,171 @@
 @import url("https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700;900&display=swap");
 .secondary {
+  height: 0px;
+  display: none;
+}
+
+h1 span {
+  font-size: 2.1rem;
+}
+
+label {
+  min-width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding-top: 15px;
+  margin: auto;
+  font-size: 1rem;
+}
+
+.btnWrapper {
+  min-width: 45%;
+  width: 325px;
+  margin: auto 0;
+}
+
+input,
+textarea {
+  background-color: inherit;
+  color: #b49595;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+input:focus,
+textarea:focus {
+  background-color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="submit"] {
+  width: 123px;
+  padding: 8px;
+  background-color: white;
+  color: #004047;
+  margin: 30px auto;
+  border-radius: 20px;
+  line-height: 28px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+input[type="submit"]:hover {
+  background-color: #5f5757;
+  width: 120px;
+}
+
+form {
+  width: 61.7%;
+  margin: auto;
+}
+
+main::before {
+  background-image: url("../images/bg-pattern-contact-2.svg");
+  visibility: visible;
+  bottom: -128px;
+  background-repeat: no-repeat;
+}
+
+main {
+  z-index: -1;
+  padding-bottom: 100px;
+  background-color: inherit;
+  padding-bottom: 0;
+}
+
+main section.hero {
+  width: 91%;
+  padding-top: 40px;
+}
+
+main .heroDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 25px;
+}
+
+main .heroDescription img {
+  width: 72px;
+  height: 72px;
+  margin: auto 0;
+}
+
+main .heroDescriptionMore {
+  text-align: left;
+  width: 65%;
+}
+
+section.primary {
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  header section.primary::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/bg-pattern-home-1.svg);
+    left: -12%;
+  }
+  main section.hero, main form {
+    width: 60.3%;
+  }
+  main .heroBody {
+    padding-top: 0;
+  }
+  main .heroDescriptionMore {
+    width: 81.5%;
+  }
+  main .heroDescriptionMore p {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  header section.primary::before {
+    left: -31%;
+  }
+  h1 {
+    text-align: left;
+    margin-left: 40px;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  main section.hero, main form {
+    width: 40.3%;
+  }
+}
+
+.secondary {
   width: 200px;
   height: 200px;
   right: -100px;
@@ -356,6 +522,7 @@ p {
   background-size: contain;
   background-image: url(../images/bg-pattern-home-2.svg);
   background-repeat: no-repeat;
+  display: block;
   margin: auto;
   bottom: 0;
   right: 0;
@@ -841,6 +1008,14 @@ svg.hamburger:hover {
   header .secondary {
     width: 25%;
     margin-right: 20%;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   main section.hero {
     display: -webkit-box;

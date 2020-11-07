@@ -75,15 +75,16 @@ main {
   z-index: -1;
   padding-bottom: 100px;
   background-color: inherit;
+  padding-bottom: 0;
 }
 main section.hero {
-  width: 61.7%;
+  width: 91%;
   padding-top: 40px;
 }
 main .heroDescription {
   display: flex;
   align-items: center;
-  align-items: center;
+  justify-content: center;
   flex-wrap: nowrap;
   gap: 25px;
 }
@@ -125,7 +126,7 @@ section.primary {
     font-size: 1.2rem;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1220px) {
   header section.primary::before {
     left: -31%;
   }

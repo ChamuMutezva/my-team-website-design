@@ -120,6 +120,7 @@ p {
   background-size: contain;
   background-image: url(../images/bg-pattern-home-2.svg);
   background-repeat: no-repeat;
+  display: block;
   margin: auto;
   bottom: 0;
   right: 0;
@@ -516,6 +517,10 @@ main p {
     margin-right: 20%;
   }
 
+  main {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
   main section.hero {
     display: flex;
     flex-wrap: nowrap;

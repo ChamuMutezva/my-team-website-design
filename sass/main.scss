@@ -121,7 +121,7 @@ p {
     background-size: contain;
     background-image: url(../images/bg-pattern-home-2.svg);
     background-repeat: no-repeat;
-   // margin: 80px auto 0;
+    display: block;
     margin: auto;
     bottom: 0;
     right: 0;
@@ -130,7 +130,8 @@ p {
 main {
     background-color: #012F34;
     position: relative;
-   // padding-bottom: 0px; //fix import 1
+
+    // padding-bottom: 0px; //fix import 1
     section.hero {
         width: 82%;
         margin: auto;
@@ -398,6 +399,7 @@ svg.hamburger:hover {
             margin: auto;
         }
     }
+
     svg.closemenu {
         display: none;
     }
@@ -590,6 +592,8 @@ svg.hamburger:hover {
 
     //main 
     main {
+        flex-direction: column;
+        flex-wrap: nowrap;
         section.hero {
             display: flex;
             flex-wrap: nowrap;
@@ -624,11 +628,13 @@ svg.hamburger:hover {
         .profilesDescription {
             width: 30%;
         }
+
         .call-to-actionContainer {
-            width: 70.2%; 
+            width: 70.2%;
+
             h3 {
                 font-size: 3.2rem;
-            }          
+            }
         }
     }
 
@@ -665,6 +671,7 @@ svg.hamburger:hover {
         }
     }
 }
+
 /*
 @media screen and (min-width: 1450px) {
     .wrapper {

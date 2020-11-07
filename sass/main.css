@@ -132,6 +132,7 @@ p {
   background-size: contain;
   background-image: url(../images/bg-pattern-home-2.svg);
   background-repeat: no-repeat;
+  display: block;
   margin: auto;
   bottom: 0;
   right: 0;
@@ -617,6 +618,14 @@ svg.hamburger:hover {
   header .secondary {
     width: 25%;
     margin-right: 20%;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   main section.hero {
     display: -webkit-box;

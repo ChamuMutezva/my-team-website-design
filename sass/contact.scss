@@ -68,23 +68,23 @@ main::before {
     background-image: url('../images/bg-pattern-contact-2.svg');
     visibility: visible;
     bottom: -128px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;   
 }
 
-main {
+main {   
     z-index: -1;
     padding-bottom: 100px;
     background-color: inherit;
-
+    padding-bottom: 0;
     section.hero {
-        width: 61.7%;
+        width: 91%;
         padding-top: 40px;
     }
 
     .heroDescription {
         display: flex;
         align-items: center;
-        align-items: center;
+        justify-content: center;
         flex-wrap: nowrap;
         gap: 25px;
         img {
@@ -93,18 +93,20 @@ main {
             margin: auto 0;
         }
     }
-
+ 
     .heroDescriptionMore {
         text-align: left;
         width: 65%;
-    }
+    } 
 }
 
 section.primary {
     padding-bottom: 0;
 }
 
+
 @media screen and (min-width: 768px) {
+   
     header {
         section.primary::before {
             position: absolute;
@@ -115,7 +117,7 @@ section.primary {
             left: -12%;
         }
     }
-
+ 
     main {
         section.hero, form {
             width: 60.3%;
@@ -131,9 +133,10 @@ section.primary {
         }
         }
     }
+    
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1220px) {
     header {
         section.primary::before {
             left: -31%;

@@ -32,6 +32,7 @@ if (allCards !== null) {
     })
 }
 //end of about page implementation
+//contact page
 
 if (form !== null) {
     form.addEventListener("submit", (evt) => {

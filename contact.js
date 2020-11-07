@@ -1,1 +1,1 @@
-console.log("contact form")
+console.log(form)
