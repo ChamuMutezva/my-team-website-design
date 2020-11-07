@@ -26,19 +26,19 @@ label {
 
 input,
 textarea {
-    background-color: inherit;
-    color: rgb(180, 149, 149);
+   // background-color: inherit;
+    color: rgb(7, 1, 1);
     border: none;
     outline: none;
     border-bottom: 2px solid white;
     padding-bottom: 10px;
 }
 
-input:focus,
+/*input:focus,
 textarea:focus {
     background-color: inherit;
 }
-
+*/
 textarea {
     resize: none;
 }
