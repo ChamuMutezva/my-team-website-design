@@ -325,8 +325,11 @@ main::before {
     width: 200px;
     height: 244px;
     right: -100px;
+    bottom: 128px;
+    top: 0;
     content: "";
     background-image: url("../images/bg-pattern-home-3.svg");
+    visibility: visible;
 }
 
 footer {
@@ -649,7 +652,7 @@ svg.hamburger:hover {
     }
 
     main::before {
-        top: 304px;
+        top: 330px;
     }
 
     //footer

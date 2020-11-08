@@ -9,6 +9,7 @@
 
 header {
   position: relative;
+  z-index: 2;
 }
 
 section.primary {
@@ -146,6 +147,10 @@ main .profilesWrapper {
   position: relative;
   background-color: #004047;
   padding-bottom: 5px;
+}
+
+main .profilesHeader {
+  padding: 60px 0 20px;
 }
 
 main .profilesWrapper::before {

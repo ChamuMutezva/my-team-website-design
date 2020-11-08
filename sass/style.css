@@ -81,7 +81,7 @@ form {
 main::before {
   background-image: url("../images/bg-pattern-contact-2.svg");
   visibility: visible;
-  bottom: -128px;
+  top: 90%;
   background-repeat: no-repeat;
 }
 
@@ -154,7 +154,7 @@ footer {
     font-size: 1.2rem;
   }
   main::before {
-    bottom: -19px;
+    top: 79%;
   }
   form {
     padding-bottom: 76px;
@@ -187,6 +187,9 @@ footer {
   main form {
     width: 34.3%;
   }
+  main::before {
+    top: 67%;
+  }
 }
 
 .secondary {
@@ -200,6 +203,7 @@ footer {
 
 header {
   position: relative;
+  z-index: 2;
 }
 
 section.primary {
@@ -339,6 +343,10 @@ main .profilesWrapper {
   padding-bottom: 5px;
 }
 
+main .profilesHeader {
+  padding: 60px 0 20px;
+}
+
 main .profilesWrapper::before {
   content: "";
   width: 147px;
@@ -424,6 +432,10 @@ aside {
   main .clients {
     gap: 20px;
   }
+  main .clientSection::before {
+    top: -100px;
+    left: 0px;
+  }
 }
 
 @media screen and (min-width: 1220px) {
@@ -432,6 +444,17 @@ aside {
   }
   main .profilesDescription {
     width: 100%;
+  }
+  main .clientList h2 {
+    margin-top: 65px;
+    margin-bottom: 100px;
+  }
+  main .clients {
+    margin-top: 45px;
+  }
+  main .clientSection::before {
+    top: 0px;
+    left: 0px;
   }
 }
 
@@ -792,8 +815,11 @@ main::before {
   width: 200px;
   height: 244px;
   right: -100px;
+  bottom: 128px;
+  top: 0;
   content: "";
   background-image: url("../images/bg-pattern-home-3.svg");
+  visibility: visible;
 }
 
 footer {
@@ -1120,7 +1146,7 @@ svg.hamburger:hover {
     font-size: 3.2rem;
   }
   main::before {
-    top: 304px;
+    top: 330px;
   }
   footer .footerSection {
     width: 70.2%;

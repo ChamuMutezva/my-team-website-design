@@ -74,7 +74,8 @@ form {
 main::before {
     background-image: url('../images/bg-pattern-contact-2.svg');
     visibility: visible;
-    bottom: -128px;
+   // bottom: -128px;
+   top: 90%;
     background-repeat: no-repeat;   
 }
 
@@ -145,7 +146,7 @@ footer {
         }
     }
     main::before {
-        bottom: -19px;
+        top: 79%;
     }
     form {
         padding-bottom: 76px;
@@ -174,6 +175,9 @@ footer {
          form {
             width: 34.3%
         }
+    }
+    main::before {
+        top: 67%;
     }
 
 }
