@@ -1,18 +1,15 @@
 header {
     z-index: 4;
 }
+
 .secondary {
     height: 0px;
     display: none;
 }
 
-h1 span {
-    font-size: 2.1rem;
-}
-
 label {
     min-width: 45%;
-   // width: 325px;
+    // width: 325px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -52,15 +49,16 @@ input[type="submit"] {
     padding: 10px 8px;
     background-color: white;
     border: none;
-    color:  #012F34;   
+    color: #012F34;
     margin: 30px auto;
     border-radius: 20px;
     line-height: 28px;
     font-size: 1.2rem;
     font-weight: 600;
 }
+
 input[type="submit"]:hover {
-    background-color:  #012F34;
+    background-color: #012F34;
     color: white;
     width: 120px;
 }
@@ -74,19 +72,31 @@ form {
 main::before {
     background-image: url('../images/bg-pattern-contact-2.svg');
     visibility: visible;
-   // bottom: -128px;
-   top: 90%;
-    background-repeat: no-repeat;   
+    // bottom: -128px;
+    top: 90%;
+    background-repeat: no-repeat;
 }
 
-main {   
-   // z-index: -1;
+main {
+    // z-index: -1;
     padding-bottom: 100px;
     background-color: inherit;
     padding-bottom: 0;
+
     section.hero {
         width: 91%;
         padding-top: 40px;
+
+        h1 {
+            text-align: center;
+            font-size: 4.2rem;
+        }
+        h2 {
+            font-size: 2.1rem;
+            text-align: center;
+            color: #F67E7E;
+        }
+
     }
 
     .heroDescription {
@@ -95,22 +105,24 @@ main {
         justify-content: center;
         flex-wrap: nowrap;
         gap: 25px;
+
         img {
             width: 72px;
             height: 72px;
             margin: auto 0;
         }
     }
- 
+
     .heroDescriptionMore {
         text-align: left;
         width: 65%;
-    } 
+    }
 }
 
 section.primary {
     padding-bottom: 0;
 }
+
 footer {
     position: relative;
     z-index: 3;
@@ -118,7 +130,7 @@ footer {
 
 
 @media screen and (min-width: 768px) {
-   
+
     header {
         section.primary::before {
             position: absolute;
@@ -129,53 +141,72 @@ footer {
             left: -12%;
         }
     }
- 
+
     main {
-        section.hero, form {
+        padding-left: 8%;
+        padding-right: 8%;
+
+        section.hero,
+        form {
             width: 60.3%;
         }
+
         .heroBody {
             padding-top: 0;
         }
-        .heroDescriptionMore {            
+
+        .heroDescriptionMore {
             width: 81.5%;
-        p {
-            width: 100%;
-            font-size: 1.2rem;
-        }
+
+            p {
+                width: 100%;
+                font-size: 1.2rem;
+            }
         }
     }
+
     main::before {
         top: 79%;
     }
+
     form {
         padding-bottom: 76px;
     }
 }
 
 @media screen and (min-width: 1220px) {
-   header {
+
+
+    header {
         section.primary::before {
             left: -31%;
         }
-        h1 {
-            text-align: left;
-            margin-left: 0px;
-        }
     }
-    
+
     main {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-    section.hero{
-        width: 34.15%;
-        margin-top: 0;
-    }
-         form {
+
+        section.hero {
+            width: 34.15%;
+            margin-top: 0;
+            display: block;
+
+            h1 {
+                text-align: left;
+                margin-left: 0px;
+                display: flex;
+                gap: 26px;
+                flex-direction: column;
+            }
+        }
+
+        form {
             width: 34.3%
         }
     }
+
     main::before {
         top: 67%;
     }

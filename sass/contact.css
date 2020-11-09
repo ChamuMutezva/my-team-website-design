@@ -7,10 +7,6 @@ header {
   display: none;
 }
 
-h1 span {
-  font-size: 2.1rem;
-}
-
 label {
   min-width: 45%;
   display: -webkit-box;
@@ -95,6 +91,17 @@ main section.hero {
   padding-top: 40px;
 }
 
+main section.hero h1 {
+  text-align: center;
+  font-size: 4.2rem;
+}
+
+main section.hero h2 {
+  font-size: 2.1rem;
+  text-align: center;
+  color: #F67E7E;
+}
+
 main .heroDescription {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,7 +146,12 @@ footer {
     background-image: url(../images/bg-pattern-home-1.svg);
     left: -12%;
   }
-  main section.hero, main form {
+  main {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  main section.hero,
+  main form {
     width: 60.3%;
   }
   main .heroBody {
@@ -164,10 +176,6 @@ footer {
   header section.primary::before {
     left: -31%;
   }
-  header h1 {
-    text-align: left;
-    margin-left: 0px;
-  }
   main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -182,6 +190,19 @@ footer {
   main section.hero {
     width: 34.15%;
     margin-top: 0;
+    display: block;
+  }
+  main section.hero h1 {
+    text-align: left;
+    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 26px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main form {
     width: 34.3%;

@@ -7,10 +7,6 @@ header {
   display: none;
 }
 
-h1 span {
-  font-size: 2.1rem;
-}
-
 label {
   min-width: 45%;
   display: flex;
@@ -88,6 +84,15 @@ main section.hero {
   width: 91%;
   padding-top: 40px;
 }
+main section.hero h1 {
+  text-align: center;
+  font-size: 4.2rem;
+}
+main section.hero h2 {
+  font-size: 2.1rem;
+  text-align: center;
+  color: #F67E7E;
+}
 main .heroDescription {
   display: flex;
   align-items: center;
@@ -124,7 +129,12 @@ footer {
     left: -12%;
   }
 
-  main section.hero, main form {
+  main {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  main section.hero,
+main form {
     width: 60.3%;
   }
   main .heroBody {
@@ -150,10 +160,6 @@ footer {
   header section.primary::before {
     left: -31%;
   }
-  header h1 {
-    text-align: left;
-    margin-left: 0px;
-  }
 
   main {
     display: flex;
@@ -163,6 +169,14 @@ footer {
   main section.hero {
     width: 34.15%;
     margin-top: 0;
+    display: block;
+  }
+  main section.hero h1 {
+    text-align: left;
+    margin-left: 0px;
+    display: flex;
+    gap: 26px;
+    flex-direction: column;
   }
   main form {
     width: 34.3%;

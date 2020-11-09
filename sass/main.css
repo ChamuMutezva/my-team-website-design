@@ -103,6 +103,10 @@ a {
   color: white;
 }
 
+a:hover {
+  color: #F67E7E;
+}
+
 a.btn {
   border: 3px solid white;
   padding: 10px 20px;
@@ -312,6 +316,7 @@ main .call-to-actionContainer {
   width: 82%;
   margin: auto;
   padding-bottom: 40px;
+  z-index: 45;
 }
 
 main .call-to-actionContainer h3 {
@@ -335,11 +340,16 @@ main .call-to-actionContainer button {
   font-size: 1.2rem;
 }
 
+main .call-to-actionContainer button:hover {
+  background-color: #012F34;
+  border: none;
+}
+
 main .call-to-actionContainer a {
   color: #012F34;
 }
 
-main .call-to-actionContainer a:hover {
+main .call-to-actionContainer button:hover a {
   color: white;
 }
 
@@ -348,6 +358,7 @@ main .call-to-actionFooter {
   width: 100%;
   height: 122px;
   background-repeat: no-repeat;
+  z-index: 30;
 }
 
 main::before {
@@ -424,6 +435,10 @@ footer .social {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+footer .social svg path:hover {
+  fill: #F67E7E;
 }
 
 footer p.copyright {
@@ -641,6 +656,8 @@ svg.hamburger:hover {
             flex-direction: column;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    padding-right: 0;
+    padding-left: 0;
   }
   main section.hero {
     display: -webkit-box;
