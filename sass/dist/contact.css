@@ -137,6 +137,9 @@ footer {
 main form {
     width: 60.3%;
   }
+  main section.hero h2 {
+    width: 100%;
+  }
   main .heroBody {
     padding-top: 0;
   }
@@ -177,6 +180,9 @@ main form {
     display: flex;
     gap: 26px;
     flex-direction: column;
+  }
+  main section.hero h2 {
+    text-align: left;
   }
   main form {
     width: 34.3%;

@@ -154,6 +154,9 @@ footer {
   main form {
     width: 60.3%;
   }
+  main section.hero h2 {
+    width: 100%;
+  }
   main .heroBody {
     padding-top: 0;
   }
@@ -203,6 +206,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  main section.hero h2 {
+    text-align: left;
   }
   main form {
     width: 34.3%;

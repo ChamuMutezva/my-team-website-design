@@ -508,6 +508,10 @@ svg.hamburger:hover {
     display: block;
     width: 50%;
   }
+  main {
+    padding-left: 0;
+    padding-right: 0;
+  }
   main .heroDescription {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -523,8 +527,9 @@ svg.hamburger:hover {
   main .heroDescription img {
     margin: auto 0;
   }
-  main h2 {
+  main section.hero h2 {
     width: 70%;
+    text-align: left;
   }
   main blockquote {
     width: 90%;
