@@ -8,16 +8,23 @@ header {
 }
 
 label {
+    position: relative;
     min-width: 45%;
     // width: 325px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-top: 15px;
+    padding-top: 30px;
     margin: auto;
     font-size: 1rem;
 }
-
+small {
+    position: absolute;
+    bottom: -20px;
+    color: deeppink;
+    font-size: 1rem;
+    visibility: hidden;
+}
 .btnWrapper {
     min-width: 45%;
     width: 325px;
@@ -201,12 +208,13 @@ footer {
             h1 {
                 text-align: left;
                 margin-left: 0px;
-                display: flex;
-                gap: 26px;
-                flex-direction: column;
+               // display: flex;
+               // gap: 26px;
+               // flex-direction: column;
             }
             h2 {
                 text-align: left;
+                margin-bottom: 25px;
             }
         }
 
