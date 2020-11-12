@@ -147,10 +147,11 @@ main .profilesWrapper {
   position: relative;
   background-color: #004047;
   padding-bottom: 5px;
+  overflow: hidden;
 }
 
 main .profilesHeader {
-  padding: 60px 0 20px;
+  padding: 90px 0 20px;
 }
 
 main .profilesWrapper::before {
@@ -221,6 +222,15 @@ aside {
   position: relative;
 }
 
+.aboutAside {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  left: -100px;
+  overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
   header .secondary {
     width: 200px;
@@ -228,6 +238,12 @@ aside {
     right: -100px;
     bottom: 0px;
     margin-right: 0;
+  }
+  header section.primary::before {
+    width: 0;
+  }
+  .aboutAside {
+    top: 0px;
   }
   main .clientSection {
     width: 100%;
