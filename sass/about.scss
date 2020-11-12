@@ -1,3 +1,4 @@
+$textColor: #F67E7E;
 .secondary {
     width: 200px;
     height: 200px;
@@ -79,7 +80,7 @@ main {
 
         .twitter path:hover,
         .instagram path:hover {
-            fill: #f67e7e;
+            fill: $textColor;
         }
     }
 
@@ -87,7 +88,7 @@ main {
         width: 56px;
         height: 56px;
         position: absolute;
-        background-color: #f67e7e;
+        background-color: $textColor;
         left: 44%;
         bottom: -28px;
         border-radius: 50%;

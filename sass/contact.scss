@@ -1,3 +1,4 @@
+$textColor: #F67E7E;
 header {
     z-index: 4;
 }
@@ -21,7 +22,7 @@ label {
 small {
     position: absolute;
     bottom: -20px;
-    color: #F67E7E;
+    color: $textColor;
     font-size: 1rem;
     visibility: hidden;
 }
@@ -29,7 +30,7 @@ small {
     visibility: visible;
 }
 .invalidInput {
-    border-bottom: 1px solid #F67E7E;
+    border-bottom: 1px solid $textColor;
 }
 .btnWrapper {
     min-width: 45%;
@@ -108,7 +109,7 @@ main {
         h2 {
             font-size: 2.1rem;
             text-align: center;
-            color: #F67E7E;
+            color: $textColor;
         }
 
     }
