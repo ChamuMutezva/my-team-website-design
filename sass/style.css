@@ -9,6 +9,7 @@ header {
 }
 
 label {
+  position: relative;
   min-width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,9 +19,25 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-  padding-top: 15px;
+  padding-top: 30px;
   margin: auto;
   font-size: 1rem;
+}
+
+small {
+  position: absolute;
+  bottom: -20px;
+  color: #F67E7E;
+  font-size: 1rem;
+  visibility: hidden;
+}
+
+.errorDisplay {
+  visibility: visible;
+}
+
+.invalidInput {
+  border-bottom: 1px solid red;
 }
 
 .btnWrapper {
@@ -202,6 +219,7 @@ footer {
   }
   main section.hero h2 {
     text-align: left;
+    margin-bottom: 25px;
   }
   main form {
     width: 34.3%;

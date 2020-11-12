@@ -33,21 +33,23 @@ if (allCards !== null) {
 //contact page
 
 
+inputs.forEach(function (input) {
+  console.log(input);
+  input.addEventListener("invalid", function () {
+    input.nextElementSibling.classList.add("errorDisplay");
+    input.classList.add("invalidInput");
+  });
+  input.addEventListener("input", function () {
+    if (input.validity.valid) {
+      input.nextElementSibling.classList.remove("errorDisplay");
+      input.classList.remove("invalidInput");
+    }
+  });
+});
+
 if (form !== null) {
   form.addEventListener("submit", function (evt) {
     console.log(evt.target);
-    inputs.forEach(function (input) {
-      console.log(input);
-
-      if (input.value == "") {
-        console.log(input); //  input.setCustomValidity("First Name can not be blank")
-        // input.nextElementSibling.classList.add("errorDisplay");
-        //input.nextElementSibling.innerHTML = `${input.name} cannot be empty`;
-      } else {// input.setCustomValidity("")
-          //input.nextElementSibling.classList.remove("errorDisplay");
-          //input.nextElementSibling.innerHTML = "";
-        }
-    });
     evt.preventDefault();
   });
 }

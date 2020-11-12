@@ -21,9 +21,17 @@ label {
 small {
   position: absolute;
   bottom: -20px;
-  color: deeppink;
+  color: #F67E7E;
   font-size: 1rem;
   visibility: hidden;
+}
+
+.errorDisplay {
+  visibility: visible;
+}
+
+.invalidInput {
+  border-bottom: 1px solid #F67E7E;
 }
 
 .btnWrapper {
