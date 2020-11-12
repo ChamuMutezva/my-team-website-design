@@ -6,6 +6,7 @@ var modal = document.querySelector(".modal");
 var cross = Array.from(document.querySelectorAll(".cross"));
 var allCards = document.querySelector(".allCards");
 var inputs = Array.from(document.querySelectorAll(".feedback"));
+var resetInputs = true;
 var form = document.querySelector("form");
 console.log(form); //nav - modal menu for all pages
 
@@ -43,6 +44,8 @@ inputs.forEach(function (input) {
     if (input.validity.valid) {
       input.nextElementSibling.classList.remove("errorDisplay");
       input.classList.remove("invalidInput");
+    } else {
+      resetInputs = false;
     }
   });
 });
@@ -51,5 +54,13 @@ if (form !== null) {
   form.addEventListener("submit", function (evt) {
     console.log(evt.target);
     evt.preventDefault();
+
+    if (resetInputs === true) {
+      //clear all inputs when data is correct
+      inputs.forEach(function (input) {
+        console.log("Clear all");
+        input.value = "";
+      });
+    }
   });
 }

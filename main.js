@@ -4,6 +4,7 @@ const modal = document.querySelector(".modal");
 const cross = Array.from(document.querySelectorAll(".cross"));
 const allCards = document.querySelector(".allCards");
 const inputs = Array.from(document.querySelectorAll(".feedback"));
+let resetInputs = true;
 
 const form = document.querySelector("form")
 console.log(form)
@@ -47,6 +48,8 @@ inputs.forEach(input => {
        if (input.validity.valid) {
         input.nextElementSibling.classList.remove("errorDisplay");
         input.classList.remove("invalidInput")
+       } else {
+           resetInputs = false;
        }
    })
 
@@ -57,7 +60,16 @@ if (form !== null) {
     form.addEventListener("submit", (evt) => {
         console.log(evt.target);
         evt.preventDefault();
+        if (resetInputs === true) {
+            //clear all inputs when data is correct
+            inputs.forEach(input => {
+                console.log("Clear all");
+                input.value = "";
+            })
+        }
   
     })
 
 }
+
+

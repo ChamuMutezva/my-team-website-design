@@ -100,14 +100,14 @@ main .socialProfiles {
 
 main .socialProfiles .twitter path:hover,
 main .socialProfiles .instagram path:hover {
-  fill: #f67e7e;
+  fill: #F67E7E;
 }
 
 main .cross {
   width: 56px;
   height: 56px;
   position: absolute;
-  background-color: #f67e7e;
+  background-color: #F67E7E;
   left: 44%;
   bottom: -28px;
   border-radius: 50%;
