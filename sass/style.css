@@ -586,8 +586,9 @@ svg.hamburger path {
   width: 200px;
   height: 200px;
   background-image: url("../images/bg-pattern-about-1-mobile-nav-1.svg");
+  background-repeat: no-repeat;
   bottom: 0;
-  right: 0px;
+  right: -100px;
 }
 
 ul {

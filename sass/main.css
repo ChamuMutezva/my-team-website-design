@@ -507,6 +507,10 @@ svg.hamburger:hover {
     padding-top: 12px;
     height: 20vh;
   }
+  .modal::after {
+    width: 0;
+    height: 0;
+  }
   svg.hamburger {
     display: none;
   }

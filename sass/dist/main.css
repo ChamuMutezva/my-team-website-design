@@ -417,6 +417,11 @@ svg.hamburger:hover {
     height: 20vh;
   }
 
+  .modal::after {
+    width: 0;
+    height: 0;
+  }
+
   svg.hamburger {
     display: none;
   }
