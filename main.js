@@ -60,12 +60,16 @@ if (form !== null) {
     form.addEventListener("submit", (evt) => {
         console.log(evt.target);
         evt.preventDefault();
-        if (resetInputs === true) {
+        if (resetInputs) {
             //clear all inputs when data is correct
             inputs.forEach(input => {
                 console.log("Clear all");
                 input.value = "";
+
             })
+        }
+        if(resetInputs){
+            alert("Thank you, form successfully submitted")
         }
   
     })

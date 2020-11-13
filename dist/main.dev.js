@@ -55,12 +55,16 @@ if (form !== null) {
     console.log(evt.target);
     evt.preventDefault();
 
-    if (resetInputs === true) {
+    if (resetInputs) {
       //clear all inputs when data is correct
       inputs.forEach(function (input) {
         console.log("Clear all");
         input.value = "";
       });
+    }
+
+    if (resetInputs) {
+      alert("Thank you, form successfully submitted");
     }
   });
 }
