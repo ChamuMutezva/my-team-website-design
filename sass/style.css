@@ -378,10 +378,11 @@ main .profilesWrapper {
   position: relative;
   background-color: #004047;
   padding-bottom: 5px;
+  overflow: hidden;
 }
 
 main .profilesHeader {
-  padding: 60px 0 20px;
+  padding: 90px 0 20px;
 }
 
 main .profilesWrapper::before {
@@ -452,6 +453,15 @@ aside {
   position: relative;
 }
 
+.aboutAside {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  left: -100px;
+  overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
   header .secondary {
     width: 200px;
@@ -459,6 +469,12 @@ aside {
     right: -100px;
     bottom: 0px;
     margin-right: 0;
+  }
+  header section.primary::before {
+    width: 0;
+  }
+  .aboutAside {
+    top: 0px;
   }
   main .clientSection {
     width: 100%;
@@ -497,6 +513,10 @@ aside {
 
 body {
   overflow-x: hidden;
+}
+
+.bodyModalCtl {
+  overflow-y: hidden;
 }
 
 nav {
@@ -557,6 +577,17 @@ svg.hamburger path {
   top: 0;
   height: 100vh;
   display: none;
+  z-index: 120;
+}
+
+.modal::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/bg-pattern-about-1-mobile-nav-1.svg");
+  bottom: 0;
+  right: 0px;
 }
 
 ul {
@@ -959,6 +990,9 @@ svg.hamburger:hover {
 }
 
 @media screen and (min-width: 768px) {
+  .bodyModalCtl {
+    overflow-y: visible;
+  }
   header .secondary {
     width: 50%;
     height: 100px;

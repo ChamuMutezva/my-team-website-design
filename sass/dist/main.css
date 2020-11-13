@@ -2,6 +2,10 @@ body {
   overflow-x: hidden;
 }
 
+.bodyModalCtl {
+  overflow-y: hidden;
+}
+
 nav {
   padding-top: 48px;
   padding-bottom: 80px;
@@ -53,6 +57,18 @@ svg.hamburger path {
   top: 0;
   height: 100vh;
   display: none;
+  z-index: 120;
+}
+
+.modal::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/bg-pattern-about-1-mobile-nav-1.svg");
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: -100px;
 }
 
 ul {
@@ -372,6 +388,10 @@ svg.hamburger:hover {
 }
 
 @media screen and (min-width: 768px) {
+  .bodyModalCtl {
+    overflow-y: visible;
+  }
+
   header .secondary {
     width: 50%;
     height: 100px;

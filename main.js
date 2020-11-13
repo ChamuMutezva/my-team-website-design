@@ -4,6 +4,7 @@ const modal = document.querySelector(".modal");
 const cross = Array.from(document.querySelectorAll(".cross"));
 const allCards = document.querySelector(".allCards");
 const inputs = Array.from(document.querySelectorAll(".feedback"));
+const body = document.querySelector("body");
 let resetInputs = true;
 
 const form = document.querySelector("form")
@@ -12,10 +13,12 @@ console.log(form)
 //nav - modal menu for all pages
 openModal.addEventListener("click", () => {
     modal.classList.toggle("showModal")
+    body.classList.toggle("bodyModalCtl")
 })
 closeMenu.addEventListener("click", () => {
     console.log("i have been clicked")
     modal.classList.toggle("showModal")
+    body.classList.toggle("bodyModalCtl")
 })
 //end of nav - modal
 
